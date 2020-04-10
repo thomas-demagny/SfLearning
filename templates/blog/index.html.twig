@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Articles{% endblock %}
+
+{% block body %}
+<section class="articles">
+    <article>
+        <h2>Titre de l'article</h2>
+        <div class="metadata">Ecrit l 10/04/2020 à 11:03 dans la catégorie Snow.</div>
+        <div class="content"><img src="http://placehold.it/350x150" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt dolorum ea quas, quo
+                recusandae?</p>
+            <p>Atque consequuntur corporis culpa, in labore nobis officiis sunt. Consectetur est exercitationem incidunt
+                nihil nulla?</p>
+            <a href="{{ path('blog_show') }}" class="btn btn-primary">Lire la suite</a></div>
+    </article>
+    <article>
+        <h2>Titre de l'article</h2>
+        <div class="metadata">Ecrit l 10/04/2020 à 11:03 dans la catégorie Snow.</div>
+        <div class="content"><img src="http://placehold.it/350x150" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae commodi dicta error, quo
+                temporibus.</p>
+            <p>Doloremque dolores, eligendi esse ex explicabo facilis itaque, nulla odio pariatur possimus quas repellat
+                reprehenderit?</p>
+            <a href="{{ path('blog_show') }}" class="btn btn-primary">Lire la suite</a></div>
+    </article>
+    <article>
+        <h2>Titre de l'article</h2>
+        <div class="metadata">Ecrit l 10/04/2020 à 11:03 dans la catégorie Snow.</div>
+        <div class="content"><img src="http://placehold.it/350x150" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolor explicabo natus odio sapiente
+                voluptates?</p>
+            <p>Aliquam asperiores esse excepturi impedit laudantium quo rem temporibus velit veritatis voluptate! Cum,
+                quas, quos.</p>
+            <a href="{{ path('blog_show') }}" class="btn btn-primary">Lire la suite</a></div>
+    </article>
+
+</section>
+{% endblock %}

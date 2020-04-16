@@ -1,31 +1,27 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}L'article{% endblock %}
 {% block body %}
     <article>
-        <h2>Titre de l'article</h2>
-        <div class="metadata">Ecrit l 10/04/2020 à 11:03 dans la catégorie Snow.</div>
-        <div class="content"><img src="http://placehold.it/500x300" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt dolorum ea quas, quo
-                recusandae?</p>
-            <p>Atque consequuntur corporis culpa, in labore nobis officiis sunt. Consectetur est exercitationem incidunt
-                nihil nulla?</p>
-            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda dolorem eum excepturi facere impedit inventore, iste molestiae nam non omnis perferendis porro quae qui quo, ullam velit. Aspernatur aut blanditiis eos et exercitationem nemo nostrum sapiente veritatis. Non, qui, quibusdam? Delectus fugiat maiores praesentium quam. Dolores eveniet itaque quidem.</span><span>A beatae debitis dolore dolorum eligendi, fugiat id impedit ipsa libero minus modi officiis perferendis quasi quia quo ratione saepe sequi, suscipit. Aperiam beatae deleniti doloremque quia quod similique, voluptatibus voluptatum? Ab corporis dolore doloribus enim error, esse eum illum inventore molestiae nesciunt possimus quae quidem, quis quo sunt velit!</span><span>A aliquam aperiam aspernatur consectetur culpa cumque delectus distinctio dolore doloremque doloribus dolorum ea eaque eius est et eum ex facere, facilis fuga fugit hic impedit in ipsum itaque magnam modi nemo nisi nostrum numquam officia pariatur praesentium rerum similique sint vel vero voluptatum. Possimus quia saepe ullam velit voluptatum?</span></p>
+        <h2>{{ article.title }}</h2>
+        <div class="metadata">Ecrit le {{ article.createdAt |date('d/m/Y')}} à {{ article.createdAt |date('H:i')}} dans la catégorie Snow.</div>
+        <div class="content"><img src="{{article.image}}" alt="">
+            {{ article.content | raw }}
         </div>
     </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

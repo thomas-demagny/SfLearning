@@ -1,0 +1,14 @@
+{%  extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1 class="mt-5 text-center">Création d'un article !</h1>
+    <div class="col-6 offset-3 mt-5 mx-auto">
+    {{ form_start(formArticle) }}
+
+    {{ form_widget(formArticle) }}
+
+    {{ form_end(formArticle) }}
+    </div>
+
+{% endblock %}
